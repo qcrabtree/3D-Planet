@@ -8,21 +8,10 @@ let scene = new THREE.Scene();
 
             renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
-			
-			// let loader = new THREE.MaterialLoader();
+
 
 			let geometry = new THREE.SphereGeometry( 5, 32, 32 );
 			let pointLight = new THREE.PointLight(0xFFFFFF);
-			// let material = new THREE.MaterialLoader();
-			// loader.load('../Assets/earthmap1k.jpg',
-			// function ( material ) {
-			// 	Object.material = material;
-			// }
-			
-			// );
-			// let material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-			// let material = new THREE.TextureLoader().load('../Assets/earthmap1k.');
-			let texture = THREE.TextureLoader('earthmap1k.jpg');
 			let material = new THREE.MeshPhongMaterial({ color: 0xfffffe
 			});
 			let sphere = new THREE.Mesh( geometry, material );
